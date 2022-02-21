@@ -50,6 +50,7 @@ public class ArgumentsSorter {
     }
 
     public ParamsDTO retrieveArgs(String[] args){
+        if (args.length == 0) throw new NoRequiredArgsException(messageLocaleService.getMessage("error.no_req_args"));
         ParamsDTO params = new ParamsDTO();
         String[] pair;
         Map<Long, Integer> goods = new HashMap<>();

@@ -28,7 +28,7 @@ import static org.junit.Assert.assertEquals;
 @PropertySource("classpath:db-test.properties")
 @ActiveProfiles("test")
 @SpringBootTest
-@ContextConfiguration(classes = {CartServiceImpl.class, WebConfig.class, AppConfig.class, MessageLocaleService.class})
+@ContextConfiguration(classes = {AppConfig.class})
 public class CartServiceImplTest {
 
     private CartService cartService;

@@ -24,10 +24,10 @@ import static com.project.bill.util.Constant.*;
 
 @SpringBootApplication(scanBasePackages = BASE_PACKAGES_TO_SCAN)
 @Profile("!test")
-public class NewsApplication implements CommandLineRunner {
+public class BillApplication implements CommandLineRunner {
 
 	public static void main(String[] args) {
-		SpringApplication.run(NewsApplication.class, args);
+		SpringApplication.run(BillApplication.class, args);
 	}
 
 	private CartService cartService;
@@ -36,7 +36,7 @@ public class NewsApplication implements CommandLineRunner {
 	private MessageLocaleService locale;
 	private Formatter billFormatter;
 	private ArgumentsSorter sorter;
-	private Logger logger = LoggerFactory.getLogger(NewsApplication.class);
+	private Logger logger = LoggerFactory.getLogger(BillApplication.class);
 
 	@Autowired
 	public void setSorter(ArgumentsSorter sorter){this.sorter = sorter;}

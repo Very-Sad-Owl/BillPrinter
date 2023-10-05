@@ -21,7 +21,7 @@ import static org.junit.Assert.assertEquals;
 @RunWith(SpringJUnit4ClassRunner.class)
 @ActiveProfiles("test")
 @SpringBootTest
-@ContextConfiguration(classes = {ProductServiceImpl.class, AppConfig.class})
+@ContextConfiguration(classes = {AppConfig.class})
 public class ProductServiceImplTest {
 
     private ProductService productService;

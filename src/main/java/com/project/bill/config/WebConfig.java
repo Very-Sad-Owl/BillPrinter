@@ -35,11 +35,6 @@ public class WebConfig implements WebMvcConfigurer {
         configurer.enable();
     }
 
-//    @Override
-//    public void configureDefaultServletHandling(
-//            DefaultServletHandlerConfigurer configurer) {
-//        configurer.enable();
-//    }
 
     public void addResourceHandlers(ResourceHandlerRegistry registry) {
        registry.addResourceHandler("/images/**").addResourceLocations("/images/")

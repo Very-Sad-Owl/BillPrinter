@@ -117,6 +117,14 @@
 			<scope>test</scope>
 		</dependency>
 
+		<dependency>
+			<groupId>by.epam.training.jwd.task03</groupId>
+			<artifactId>task03</artifactId>
+			<scope>system</scope>
+			<version>1.0</version>
+			<systemPath>${basedir}\lib\JWD_Task03.jar</systemPath>
+		</dependency>
+
 	</dependencies>
 
 	<build>
